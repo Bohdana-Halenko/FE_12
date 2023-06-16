@@ -2,6 +2,7 @@
     width: 60px;
     height: 4px;
     background: #F38181;
+<<<<<<< HEAD
     border-radius: 20px;
 }
 header{
@@ -24,6 +25,30 @@ width: 230px;
     font-size: 24px;
 }
 .title {
+=======
+}
+a{
+    color: rgb(51, 172, 97);
+    text-decoration:none ;
+}
+.button{
+    background-color:#95E1D3 ;
+    border: none;
+    padding: 12px 38px;
+    color: white;
+    cursor: pointer;
+}
+.input{
+    color: lightslategray;
+    padding: 12px 10px;
+    width: 230;
+}
+.title{
+    font-weight: 400;
+    font-size: 24px;
+}
+.text{
+>>>>>>> cec2adb7cca131411d65b329cb51584637d2e8ea
     font-weight: 700;
     font-size: 30px;
 }
