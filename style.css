@@ -1,0 +1,38 @@
+h2{
+    color: red;
+    font-size: 40px;
+    background-color: blanchedalmond;
+
+}
+
+/* 1000 */
+
+/* 0100 */
+/* #text{
+    color: red;
+} */
+
+/* 0010 */
+/* .text{
+    color: violet;
+} */
+
+/* 0001 */
+/* p{
+    color: black;
+} */
+
+
+/* 0101 */
+#title + p{
+
+}
+/* 0003 */
+ul+li+a{
+
+}
+
+.text,
+.title{
+    color: green;
+}
