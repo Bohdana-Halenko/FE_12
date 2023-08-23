@@ -1,0 +1,86 @@
+html{
+    font-size: 16px;
+}
+/* body{
+    font-size: 12px;
+} */
+.box-text{
+    width: 500px;
+    background-color: rgb(7, 195, 242);
+    /* margin-left: 30px; */
+    /* font-size: 14px; */
+}
+.text{
+    width: 90%;
+    font-size: 2rem;
+}
+
+a{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 208, 0);
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 183, 0);
+    display: inline-block;
+}
+a::after{
+   content: ''; 
+   display: block;
+   width: 40px;
+   height: 40px;
+   background-color: blue;
+   border-radius: 50%;
+   /* padding-top: 20px; */
+   /* margin-top: 20px; */
+}
+
+
+.next-text::first-letter{
+    font-size: 30px;
+    font-style: italic;
+    /* background-color: coral; */
+}
+.next-text::selection {
+    background-color: coral;
+    color: white;
+}
+.next-text::first-line {
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    width: 240px;
+    height: 150px;
+    background-color: rgb(196, 198, 198);
+    border: 2px solid gray;
+}
+.item::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: fuchsia;
+    background-image: url(./cat.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item:nth-child(4)::before{
+    background-image: url(./tilapia.png);
+}
