@@ -76,11 +76,80 @@ a::after{
     width: 100%;
     height: 80px;
     background-color: fuchsia;
-    background-image: url(./cat.png);
+    background-image: url(./antenna.png);
     background-size: 60px;
     background-repeat: no-repeat;
     background-position: center;
 }
 .item:nth-child(4)::before{
     background-image: url(./tilapia.png);
+}
+
+/* .background{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    background-color: greenyellow;
+    background-image: linear-gradient(rgba(47, 48, 58, 0), rgba(1, 1, 1, 0.4)), url(./290636_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+ul{
+    list-style: none;
+}
+.benefits-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    margin-top: 30px;
+}
+
+.benefits-text {
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-top: 10px;
+}
+
+.benefits-list {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.benefits-block {
+    width: 270px;
+    height: 120px;
+}
+.benefits-block::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: gray;
+    background-image: url(../img/antenna.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.benefits-block:nth-child(2)::before{
+    background-image: url(../tilapia.png);
+}
+.benefits-block:nth-child(3)::before {
+    background-image: url(../cat.png);
+}
+
+
+.box-one{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-top: 300px;
+    background-image: linear-gradient(skyblue 20%, yellow 80%, fuchsia 90%, white);
 }
