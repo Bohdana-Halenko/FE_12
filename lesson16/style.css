@@ -1,0 +1,155 @@
+html{
+    font-size: 16px;
+}
+/* body{
+    font-size: 12px;
+} */
+.box-text{
+    width: 500px;
+    background-color: rgb(7, 195, 242);
+    /* margin-left: 30px; */
+    /* font-size: 14px; */
+}
+.text{
+    width: 90%;
+    font-size: 2rem;
+}
+
+a{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 208, 0);
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 183, 0);
+    display: inline-block;
+}
+a::after{
+   content: ''; 
+   display: block;
+   width: 40px;
+   height: 40px;
+   background-color: blue;
+   border-radius: 50%;
+   /* padding-top: 20px; */
+   /* margin-top: 20px; */
+}
+
+
+.next-text::first-letter{
+    font-size: 30px;
+    font-style: italic;
+    /* background-color: coral; */
+}
+.next-text::selection {
+    background-color: coral;
+    color: white;
+}
+.next-text::first-line {
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    width: 240px;
+    height: 150px;
+    background-color: rgb(196, 198, 198);
+    border: 2px solid gray;
+}
+.item::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: fuchsia;
+    background-image: url(./antenna.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item:nth-child(4)::before{
+    background-image: url(./tilapia.png);
+}
+
+/* .background{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    background-color: greenyellow;
+    background-image: linear-gradient(rgba(47, 48, 58, 0), rgba(1, 1, 1, 0.4)), url(./290636_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+ul{
+    list-style: none;
+}
+.benefits-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    margin-top: 30px;
+}
+
+.benefits-text {
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-top: 10px;
+}
+
+.benefits-list {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.benefits-block {
+    width: 270px;
+    height: 120px;
+}
+.benefits-block::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: gray;
+    background-image: url(../img/antenna.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.benefits-block:nth-child(2)::before{
+    background-image: url(../tilapia.png);
+}
+.benefits-block:nth-child(3)::before {
+    background-image: url(../cat.png);
+}
+
+
+.box-one{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-top: 300px;
+    background-image: linear-gradient(skyblue 20%, yellow 80%, fuchsia 90%, white);
+}

@@ -5,17 +5,22 @@ body{
 /* ---------------------------------------------:hover --------------------------------------------*/
 /* .link {
     color: teal;
-}
+} 
 .link:hover {
     color: tomato;
-} */
+}   */
 
 /* -----------------------------------:focus     КОМБІНУЄМО-----------------------------------------*/
 /* .social-links .link {
     color: teal;
-}
+} */
 
-.social-links .link:focus {
+/* .social-links .link:focus {
+    color: orange;
+}  */
+
+/* .link:hover,
+.link:focus{
     color: orange;
 } */
 
@@ -31,7 +36,7 @@ body{
 
 .social-links .link:active {
     color: red;
-} */
+}  */
 
 /* --------------------------------------:visited--------------------------------------------------- */
 /* .social .item {
@@ -45,7 +50,7 @@ body{
     color: red;
 }
 .social .item:visited {
-    color: green;
+    color: yellow;
 } */
 
 
@@ -62,19 +67,18 @@ body{
     border-radius: 50%;
     border: 1px solid rgb(60, 60, 60);
     text-align: center;
-    justify-content: center;
     margin: 5px;
 }
 
-/* .list-item:first-child {
+ /* .list-item:first-child {
     background-color: orange;
-} */
+}
 
-/* .list-item:last-child {
+.list-item:last-child {
     background-color: orange;
-}  */
+}  
 
-/* .list-item:nth-child(5) {
+.list-item:nth-child(3) {
     background-color: orange;
 } */
 
@@ -92,20 +96,20 @@ body{
 
 /* .list-item:nth-child(n + 6) {
     background-color: orange;
+}
+
+.list-item:nth-child(-n + 5) {
+    background-color: yellow;
 } */
 
-/* .list-item:nth-child(-n + 5) {
+/* .list-item:nth-child(5n + 2) {
     background-color: orange;
 } */
 
-/* .list-item:nth-child(3n + 1) {
+/* .list-item:nth-last-child(2) {
     background-color: orange;
 } */
 
-/* .list-item:nth-last-child(3) {
-    background-color: orange;
-} */
-
-/* .list-item:nth-last-child(-n + 3) {
+/* .list-item:nth-last-child(-n + 5) {
     background-color: orange;
 } */
