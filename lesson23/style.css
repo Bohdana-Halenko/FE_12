@@ -1,0 +1,11 @@
+.icon{
+    fill: skyblue;
+    fill-opacity: 0.5;
+    stroke: red;
+    stroke-width: 10px;
+    stroke-opacity: 0.1;
+}
+.icon:hover{
+    fill: fuchsia;
+    stroke: yellow
+}
