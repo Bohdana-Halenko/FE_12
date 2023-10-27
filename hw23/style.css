@@ -1,3 +1,36 @@
+.icon-mail{
+    fill: red;
+}
+.icon-mail:hover{
+    fill: aqua;
+}
+ul{
+    list-style: none;
+}
+/* li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.icon-phone{
+    margin-right: 20px;
+    fill: gray;
+}
+a{
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul a:hover{
+    color: aqua;
+}
+a:hover .icon-phone{
+    fill: aqua;
+}
+
 
 
 
