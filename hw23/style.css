@@ -1,0 +1,138 @@
+.icon-mail{
+    fill: red;
+}
+.icon-mail:hover{
+    fill: aqua;
+}
+ul{
+    list-style: none;
+}
+/* li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.icon-phone{
+    margin-right: 20px;
+    fill: gray;
+}
+a{
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-list .site-number:hover{
+    color: #2196F3;
+}
+.site-number:hover .icon-phone{
+    fill: #2196F3;
+}
+
+
+.social-list{
+    margin-top: 16px;
+    display: flex;
+}
+.social-list-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-list-icon{
+    width: 20px;
+    height: 20px;
+}
+.social-list-link:hover,
+.social-list-link:focus{
+    background-color: #2196F3;
+}
+.social-list-item:hover .social-list-link{
+    fill: white;
+}
+
+
+
+
+.clients-list{
+    display: flex;
+    margin-left: -30px;
+}
+.clients-item{
+    margin-left: 30px;
+}
+.clients-link{
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+}
+.clients-icon{
+    width: 106px;
+    height: 60px;
+}
+.clients-link:hover,
+.clients-link:focus{
+    fill: #2196F3;
+    border-color: #2196F3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

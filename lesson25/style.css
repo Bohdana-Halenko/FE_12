@@ -1,0 +1,86 @@
+/* h2{   
+position: sticky;
+top: 0;
+background-color: skyblue;
+    margin: 0;
+    width: 100%;
+} */
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 500px;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid; */
+    margin: 20px;
+}
+
+.box:nth-child(1){
+    background-color: teal;
+}
+.box:nth-child(2) {
+    background-color: orange;
+}
+.box:nth-child(3) {
+    background-color: pink;
+}
+
+.box.relative{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+
+
+
+
+
+
+p{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+    border-radius: 4px;
+}
+.wrap{
+    display: flex;
+    margin-bottom: 200px;
+}
+.card{
+    width: 300px;
+    margin: 20px;
+    position: relative;
+}
+.card > .label{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background-color: rgb(35, 138, 255);
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+.btn{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border: none;
+    background-color: transparent;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1653/1653630.png");
+    background-size: cover;
+    cursor: pointer;
+
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
