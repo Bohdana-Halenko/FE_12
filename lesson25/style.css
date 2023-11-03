@@ -1,19 +1,19 @@
-/* h2{   
+h2{   
 position: sticky;
 top: 0;
 background-color: skyblue;
     margin: 0;
     width: 100%;
-} */
-.container{
+} 
+ /* .container{
     display: flex;
     justify-content: center;
     margin-bottom: 500px;
-}
+} */
 .box{
     width: 150px;
     height: 150px;
-    /* border: 1px solid; */
+
     margin: 20px;
 }
 
@@ -49,7 +49,7 @@ img{
 }
 .wrap{
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 600px;
 }
 .card{
     width: 300px;
@@ -83,4 +83,44 @@ img{
     position: fixed;
     right: 30px;
     bottom: 30px;
+} */ 
+
+
+
+
+
+.container{
+    position: relative;
+}
+.box{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 8px;
+}
+.box:nth-child(1){
+    background-color: skyblue;
+    z-index: -1;
+    top: 50px;
+    left: 100px;
+}
+.box:nth-child(2) {
+    background-color: yellow;
+    z-index: -2;
+    top: 100px;
+    left: 190px;
+}
+.box:nth-child(3) {
+    background-color: fuchsia;
+    z-index: 1;
+    top: 140px;
+
+}
+.box:nth-child(4) {
+    background-color: orange;
+    left: 20px;
 }
