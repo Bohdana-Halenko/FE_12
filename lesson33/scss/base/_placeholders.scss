@@ -1,0 +1,26 @@
+%button {
+    padding: 15px 30px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+%flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%font{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+%font-bold{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+}

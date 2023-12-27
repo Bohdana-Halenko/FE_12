@@ -39,4 +39,38 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.team {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(255, 255, 200);
+}
+
+.team__title {
+  font-size: 28px;
+  color: rgb(188, 122, 0);
+}
+.team__title:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.team__list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  width: 150px;
+  height: 150px;
+  background-color: lightblue;
+  border: 1px dashed gray;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

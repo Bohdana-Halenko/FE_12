@@ -1,0 +1,84 @@
+.team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(255, 255, 200);
+}
+.team__title{
+    // text-align: center;
+    font-size: 28px;
+    color: rgb(188, 122, 0);
+   
+    &:hover{
+        color: red;
+        cursor: pointer;
+    }
+}
+.team__list{
+    margin-top: 20px;
+    @include flexbox;
+
+}
+.team__item{
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    border: 1px dashed gray;
+    font-size: 22px;
+    font-weight: 700;
+    @include flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// .button{
+//     padding: 15px 50px;
+//     border-radius: 50px;
+//     font-size: 30px;
+//     font-weight: 700;
+//     margin-right: 30px;
+//     cursor: pointer;
+// }
+// .button-one{
+//     @extend .button;
+//     background-color: pink;
+// }
+// .button-two{
+//     @extend .button;
+//     background-color: rgb(149, 248, 149);
+// }
+
+
+
+// .button-one{
+//     @extend %button;
+//     background-color: pink;
+// }
+// .button-two{
+//     @extend %button;
+//     background-color: rgb(181, 255, 181);
+// }
+
+
+// .button-one, .button-two{
+//     padding: 15px 30px;
+//         font-size: 30px;
+//         font-weight: 700;
+//         margin-right: 30px;
+//         cursor: pointer;
+//         border-radius: 50px;
+// }
+// .button-one{
+//     background-color: pink;
+// }
+// .button-two{
+//     background-color: rgb(181, 255, 181);
+// }
