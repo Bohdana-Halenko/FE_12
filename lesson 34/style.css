@@ -1,0 +1,10 @@
+.box{
+    background-color: skyblue;
+    max-width: 500px;
+    /* min-width: 200px; */
+}
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
