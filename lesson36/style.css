@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 35px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 24px;
+    flex-grow: 1;
+}
+nav{
+    flex-grow: 3;
+}
+.nav-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type="checkbox"], label{
+    display: none;
+}
+.join-block{
+    flex-grow: 1;
+    text-align: right;
+}
+.join{
+    background: none;
+    border: none;
+    padding: 20px 0;
+    transition: opacity .3s;
+}
+.started{
+    background-color: rgb(255, 204, 0);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: opacity .3s;
+}
+.join:hover, .started:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    nav{
+        display: none;
+    }
+    label{
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        margin-left: auto;
+        border: 1px solid red;
+    }
+    label:hover{
+        cursor: pointer;
+    }
+    label span{
+        top: 15px;
+    }
+    label span,
+    label span::before,
+    label span::after{
+       content: ''; 
+       display: block;
+       width: 35px;
+       height: 3px;
+       background-color: black;
+       position: absolute;
+       right: 0;
+       transition: .3s;
+    }
+    label span::before{
+        top: -10px;
+    }
+    label span::after{
+        top: 10px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ .nav-menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
