@@ -60,7 +60,7 @@ input[type="checkbox"], label{
 
 @media (max-width: 768px){
     nav{
-        display: none;
+        order: 1;
     }
     label{
         display: block;
@@ -68,7 +68,6 @@ input[type="checkbox"], label{
         height: 40px;
         position: relative;
         margin-left: auto;
-        border: 1px solid red;
     }
     label:hover{
         cursor: pointer;
@@ -100,5 +99,28 @@ input[type="checkbox"], label{
     input[type="checkbox"]:checked ~ .nav-menu{
         display: flex;
         flex-direction: column;
+    }
+    input[type="checkbox"]:checked ~ label span::before{
+        top: 0;
+        transform: rotate(0);
+    }
+    input[type="checkbox"]:checked ~ label span::after{
+        top: 0;
+        transform: rotate(90deg);
+    }
+    input[type="checkbox"]:checked ~ label span{
+        transform: rotate(-45deg);
+    }
+    .nav-menu{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 12px 8px rgb(179, 179, 179);
+    }
+    .nav-menu li{
+        margin: 15px 0;
     }
 }
