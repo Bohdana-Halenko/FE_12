@@ -1,0 +1,37 @@
+.container {
+    min-width: 300px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: calc(100% / 3);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.product__button {
+    display: block;
+    margin: 16px auto 0 auto;
+}
+
+.product__button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 460px) {
+    .product {
+        width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "id": "0010",
+            "name": "product10",
+            "price": 1.3,
+            "image": "https://placehold.co/200"
+        },
+        {
+            "id": "0011",
+            "name": "product11",
+            "price": 8.2,
+            "image": "https://placehold.co/200"
+        },
+        {
+            "id": "0012",
+            "name": "product12",
+            "price": 15.9,
+            "image": "https://placehold.co/200"
+        }
+    ]
+}

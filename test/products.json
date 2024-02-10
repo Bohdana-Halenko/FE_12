@@ -1,0 +1,58 @@
+{
+    "products": [
+        {
+            "id": "0001",
+            "name": "product1",
+            "price": 18.6,
+            "image": "https://placehold.co/200"
+        },
+        {
+            "id": "0002",
+            "name": "product2",
+            "price": 6.2,
+            "image": "https://placehold.co/200"
+        },
+        {
+            "id": "0003",
+            "name": "product3",
+            "price": 4.1,
+            "image": "https://placehold.co/200"
+        },
+        {
+            "id": "0004",
+            "name": "product4",
+            "price": 164.4,
+            "image": "https://placehold.co/200"
+        },
+        {
+            "id": "0005",
+            "name": "product5",
+            "price": 12.1,
+            "image": "https://placehold.co/200"
+        },
+        {
+            "id": "0006",
+            "name": "product6",
+            "price": 13.6,
+            "image": "https://placehold.co/200"
+        },
+        {
+            "id": "0007",
+            "name": "product7",
+            "price": 6.5,
+            "image": "https://placehold.co/200"
+        },
+        {
+            "id": "0008",
+            "name": "product8",
+            "price": 9.3,
+            "image": "https://placehold.co/200"
+        },
+        {
+            "id": "0009",
+            "name": "product9",
+            "price": 201.9,
+            "image": "https://placehold.co/200"
+        }
+    ]
+}
