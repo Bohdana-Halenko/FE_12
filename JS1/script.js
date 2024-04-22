@@ -36,5 +36,6 @@
 // alert(message);
 
 
-const message = prompt("Чи погоджуєтесь ви з умовами?");
-console.log(message);
+// const message = prompt("Чи погоджуєтесь ви з умовами?");
+// console.log(message);
+
