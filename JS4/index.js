@@ -42,17 +42,32 @@
 // }
 
 
-let cost;
-const sub = 'premium';
+// let cost;
+// const sub = 'premium';
 
-if (sub === 'normal') {
-    cost = 0;
-} else if (sub === 'pro') {
-    cost = 100
-} else if (sub === 'free') {
-    cost = 200;
-} else {
-    console.log("Помилка");
-}
+// if (sub === 'normal') {
+//     cost = 0;
+// } else if (sub === 'pro') {
+//     cost = 100
+// } else if (sub === 'free') {
+//     cost = 200;
+// } else {
+//     console.log("Помилка");
+// }
 
-console.log(cost);
+// console.log(cost);
+
+
+// let type;
+// const age = 19;
+
+// if (age >= 18) {
+//     type = 'adult';
+// } else {
+//     type = 'child';
+// }
+
+// const age = 19;
+// const type = age >= 18 ? 'adult' : 'child';
+
+console.log(1 && 'false' && 'mango')
