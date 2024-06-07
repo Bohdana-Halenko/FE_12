@@ -41,6 +41,34 @@
 // names.unshift('Bohdana');
 
 
-const names = ['Alex', 'David', 'Nika', 'Bob', 'Jana', 'Artur'];
-// console.log(names.slice(1, 3));
-console.log(names.slice());
+// const names = ['Alex', 'David', 'Nika', 'Bob', 'Jana', 'Artur'];
+// // console.log(names.slice(1, 3));
+// console.log(names.slice());
+
+// видалення
+// const names = ['Bob', 'Anna', 'Alex', 'Nick', 'Nika'];
+// const newNames = names.splice(0, 3);
+// console.log(names);
+// console.log(newNames);
+
+// додавання
+// const names = ['Bob', 'Anna', 'Alex', 'Nick', 'Nika'];
+// names.splice(0, 0, 'Dima', 'Bohdan');
+// console.log(names);
+// names.splice(5, 0, 'H');
+
+
+// заміна
+// const names = ['Bob', 'Anna', 'Alex', 'Nick', 'Nika'];
+// names.splice(1, 1, 'Mariya');
+// console.log(names);
+// names.splice(2, 1, 'B', 'F', 'T');
+
+
+const fruits = ['apple', 'orange', 'kiwi'];
+const numbers = [1, 3, 5, 7];
+
+const arr = fruits.concat(numbers);
+console.log(arr);
+console.log(fruits);
+console.log(numbers);
