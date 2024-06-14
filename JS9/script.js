@@ -58,20 +58,51 @@
 // }
 
 
-const sum = function () {
-    let total = 0;
-    for (const argument of arguments) {
-        total += argument
-    }
-    return total;
+// const sum = function () {
+//     let total = 0;
+//     for (const argument of arguments) {
+//         total += argument
+//     }
+//     return total;
+// }
+
+// console.log(sum(2, 4, 6));
+
+// const fn = function () {
+//     const arg = Array.from(arguments);
+//     console.log(arg);
+// }
+
+// fn(5, 9, 10);
+// fn('s', 'f', 'a');
+
+
+
+// const b = 20;
+
+// const add = function () {
+//     const a = 5;
+//     return a + b;
+// }
+// console.log(add());
+
+
+
+// const value = 20;
+// const add = function (number) {
+//     const value = 10;
+//     const inner = 5;
+//     return number + value + inner;
+// }
+// console.log(value);
+// console.log(add(25));
+
+
+console.log(value);
+const value = 10;
+
+if (true) {
+    console.log(value);
+    var value = 5;
+    console.log(value);
 }
-
-console.log(sum(2, 4, 6));
-
-const fn = function () {
-    const arg = Array.from(arguments);
-    console.log(arg);
-}
-
-fn(5, 9, 10);
-fn('s', 'f', 'a'); 
