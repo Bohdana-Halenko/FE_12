@@ -98,11 +98,11 @@
 // console.log(add(25));
 
 
-console.log(value);
-const value = 10;
+// console.log(value);
+// const value = 10;
 
-if (true) {
-    console.log(value);
-    var value = 5;
-    console.log(value);
-}
+// if (true) {
+//     console.log(value);
+//     var value = 5;
+//     console.log(value);
+// }
