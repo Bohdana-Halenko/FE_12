@@ -96,20 +96,29 @@
 
 
 
-const sum = function (a, b, c) {
-  return a + b + c;
-}
+// const sum = function (a, b, c) {
+//   return a + b + c;
+// }
 
 
-const add = (a, b, c) => a + b + c;
-const add1 = (a, b, c) => {
-  return a + b + c;
+// const add = (a, b, c) => a + b + c;
+// const add1 = (a, b, c) => {
+//   return a + b + c;
+// }
+
+// const a = x => {
+//   return x + 5;
+// }
+
+// const b = () => {
+//   console.log('Hello!')
+// }
+
+
+
+
+const add = (...arg) => {
+  console.log(arg);
 }
 
-const a = x => {
-  return x + 5;
-}
-
-const b = () => {
-  console.log('Hello!')
-}
+add(1, 2, 3, 4, 5);
