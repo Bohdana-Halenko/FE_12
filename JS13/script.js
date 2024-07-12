@@ -50,9 +50,26 @@ const rgb = [200, 35, 255];
 // const [red, green, blue, alfa = 0.5] = rgb;
 // console.log(`Red: ${red}, green: ${green}, blue: ${blue}, alfa: ${alfa}`);
 
-const [red, ...colors] = rgb;
-console.log(red);
-console.log(colors);
+// const [red, ...colors] = rgb;
+// console.log(red);
+// console.log(colors);
 
-const [, , blue] = rgb;
-console.log(blue); 
+// const [, , blue] = rgb;
+// console.log(blue);
+
+
+const items = [
+{ name: 'Футболка', price: 250, quantity: 2 },
+{ name: 'Джинси', price: 800, quantity: 1 },
+{ name: 'Кросівки', price: 1200, quantity: 1 }
+];
+
+const calculateTotalCost = (item) => {
+    let totalCost = 0;
+    for (const { price, quantity } of items) {
+        totalCost += price * quantity;
+    }
+    return totalCost;
+}
+
+console.log(calculateTotalCost(items));
