@@ -91,36 +91,86 @@ employee.getWage();
 
 
 // get set
-class User{
-    static Roles = {
-        ADMIN: 'admin',
-        USER: 'user',
-    }
+// class User{
+//     static Roles = {
+//         ADMIN: 'admin',
+//         USER: 'user',
+//     }
 
-    #mail;
-    #role;
-    constructor({ name, age, mail, role }) {
-        this.name = name;
-        this.age = age;
-        this.#mail = mail;
-        this.#role = role;
-    }
-    get role() {
-        return this.#role;
-    }
-    set role(newRole) {
-        this.#role = newRole;
-    }
+//     #mail;
+//     #role;
+//     constructor({ name, age, mail, role }) {
+//         this.name = name;
+//         this.age = age;
+//         this.#mail = mail;
+//         this.#role = role;
+//     }
+//     get role() {
+//         return this.#role;
+//     }
+//     set role(newRole) {
+//         this.#role = newRole;
+//     }
     
+// }
+
+// const c = new User({
+//     mail: 'newbob@gmail.com',
+//     role: User.Roles.ADMIN,
+// });
+// console.log(c.Roles);
+// // console.log(User.Roles);
+// // console.log(c.role);
+// // c.role = User.Roles.USER;
+// // onsole.log(c.role);
+
+// class User {
+//     static #takenEmails = [];
+
+//     static isEmails(email) {
+//         return User.#takenEmails.includes(email);
+//     }
+
+//     #email;
+//     constructor({ email }) {
+//         this.#email = email;
+//         User.#takenEmails.push(email);
+//     }
+// }
+// const newMail = new User({ email: 'test@gmail.com' });
+// console.log(User.isEmails('test-one@gmail.com'))
+
+
+
+
+
+
+// class Child extends Parent{
+
+// }
+
+
+class User{
+    #email;
+    constructor(email) {
+        this.#email = email;
+    }
+    get email() {
+        return this.#email;
+    }
+    set email(newEmail) {
+        this.#email = newEmail;
+    }
 }
 
-const c = new User({
-    mail: 'newbob@gmail.com',
-    role: User.Roles.ADMIN,
-});
-console.log(c.Roles);
-console.log(User.Roles);
-console.log(c.role); 
-c.role = User.Roles.USER;
-onsole.log(c.role); 
+class Admin extends User{
+// щось додаємо за потреби
+    constructor({ email, post }) {
+        super(email);
+        this.post = post;
+    }
+}
 
+const admin = new Admin({email: 'test@ukr.net', post:[]});
+console.log(admin); //Admin {post: Array(0), #email: 'test@ukr.net'}
+console.log(admin.email); //test@ukr.net
