@@ -148,7 +148,7 @@ const bankAccount = {
             return;
         }
         this.balance += amount;
-        document.getElementById("message").textContent = `Рахунок поповнено на ${amoun}грн.`;
+        document.getElementById("message").textContent = `Рахунок поповнено на ${amount}грн.`;
         updateBalance();
     },
 
@@ -165,7 +165,7 @@ const bankAccount = {
         }
 
         this.balance -= amount;
-        document.getElementById("message").textContent = `Знято ${amoun}грн.`;
+        document.getElementById("message").textContent = `Знято ${amount}грн.`;
         updateBalance();
     }
 };
