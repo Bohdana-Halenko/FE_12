@@ -134,46 +134,64 @@
 // calculateDiscountedPrice(350, 10, showDiscountedPrice); // Discounted price: 315
 
 
-// 11 HW
-// Task 1
-const bankAccount = {
-    ownerName: "Дмитро",
-    accountNumber: "123456789",
-    balance: 10000,
+// // 11 HW
+// // Task 1
+// const bankAccount = {
+//     ownerName: "Дмитро",
+//     accountNumber: "123456789",
+//     balance: 10000,
 
-    deposit: function () {
-        const amount = parseFloat(document.getElementById("amount").value);
-        if (isNaN(amount) || amount <= 0) {
-            document.getElementById("message").textContent = "Помилково введена сума";
-            return;
-        }
-        this.balance += amount;
-        document.getElementById("message").textContent = `Рахунок поповнено на ${amount}грн.`;
-        updateBalance();
-    },
+//     deposit: function () {
+//         const amount = parseFloat(document.getElementById("amount").value);
+//         if (isNaN(amount) || amount <= 0) {
+//             document.getElementById("message").textContent = "Помилково введена сума";
+//             return;
+//         }
+//         this.balance += amount;
+//         document.getElementById("message").textContent = `Рахунок поповнено на ${amount}грн.`;
+//         updateBalance();
+//     },
 
-    withdraw: function () {
-        const amount = parseFloat(document.getElementById("amount").value);
-        if (isNaN(amount) || amount <= 0) {
-            document.getElementById("message").textContent = "Помилково введена сума";
-            return;
-        }
+//     withdraw: function () {
+//         const amount = parseFloat(document.getElementById("amount").value);
+//         if (isNaN(amount) || amount <= 0) {
+//             document.getElementById("message").textContent = "Помилково введена сума";
+//             return;
+//         }
 
-        if (amount > this.balance) {
-            document.getElementById("message").textContent = "Недостатньо коштів";
-            return;
-        }
+//         if (amount > this.balance) {
+//             document.getElementById("message").textContent = "Недостатньо коштів";
+//             return;
+//         }
 
-        this.balance -= amount;
-        document.getElementById("message").textContent = `Знято ${amount}грн.`;
-        updateBalance();
-    }
-};
+//         this.balance -= amount;
+//         document.getElementById("message").textContent = `Знято ${amount}грн.`;
+//         updateBalance();
+//     }
+// };
 
-function updateBalance() {
-    document.getElementById("ownerName").textContent = bankAccount.ownerName;
-    document.getElementById("accountNumber").textContent = bankAccount.accountNumber;
-    document.getElementById("balance").textContent = bankAccount.balance;
-}
+// function updateBalance() {
+//     document.getElementById("ownerName").textContent = bankAccount.ownerName;
+//     document.getElementById("accountNumber").textContent = bankAccount.accountNumber;
+//     document.getElementById("balance").textContent = bankAccount.balance;
+// }
 
-updateBalance();
+// updateBalance();
+
+
+
+
+// const element = document.getElementById('mouseover-out');
+
+// element.addEventListener('mouseover', () => {
+//     element.textContent = 'Курсор над елементом';
+// });
+
+// element.addEventListener('mouseout', () => {
+//     element.textContent = "Наведіть курсор"
+// })
+
+// const element = document.getElementById('mousemove');
+// element.addEventListener('mousemove', (e) => {
+//     element.textContent = `Координати миші: X=${e.clientX}, Y=${e.clientY}`;
+// });
