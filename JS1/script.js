@@ -1,41 +1,42 @@
-"use strict"
+// const parent = document.querySelector('#parent');
+// const child = document.querySelector('#child');
+// const des = document.querySelector('#des');
 
-// const b = 10;
-// a = b * 2;
-
-// console.log("hello goiteens".toLocaleUpperCase());
-
-// var b = 10;
-// var age = 15;
-
-// const b = 10;
-
-// let b = 10;
-
-// b = 10;
-
-// let age = 18;
-// age = 19;
-// console.log(age);
-
-// const userName = "Анна";
-// console.log(userName);
-
-// const MAIN_COLOR = ""
-
-// const a = 10.5;
-// const name = "Anna";
-// const age = true;
+// parent.addEventListener('click', () => {
+//     console.log('Parent click');
+// });
+// child.addEventListener('click', () => {
+//     console.log('Child click');
+// });
+// des.addEventListener('click', () => {
+//     console.log('Des click')
+// })
 
 
-// let userName = false;
-// console.log(typeof userName);
+// const parent = document.querySelector('#parent');
 
-// const message = "Привіт";
-// // console.log(message);
-// alert(message);
+// parent.addEventListener('click', (event) => {
+//     console.log('event.targen: ', event.target);
+//     console.log('event.currentTarget: ', event.currentTarget)
+// })
 
 
-// const message = prompt("Чи погоджуєтесь ви з умовами?");
-// console.log(message);
+// const parent = document.querySelector('#parent');
+// const child = document.querySelector('#child');
+// const des = document.querySelector('#des');
 
+// parent.addEventListener('click', () => {
+//     alert('Parent click');
+// });
+// child.addEventListener('click', () => {
+//     alert('Child click');
+// });
+// des.addEventListener('click', (event) => {
+//     event.stopImmediatePropagation();
+//     alert('Des click');
+// })
+
+const box = document.querySelector('div.box');
+box.addEventListener('click', function (event) {
+    console.log(event.target);
+})

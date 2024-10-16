@@ -195,3 +195,4 @@
 // element.addEventListener('mousemove', (e) => {
 //     element.textContent = `Координати миші: X=${e.clientX}, Y=${e.clientY}`;
 // });
+ 
