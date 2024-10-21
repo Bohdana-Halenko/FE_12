@@ -28,7 +28,7 @@
     padding: 8px;
     border: 1px solid black;
 } */
-
+/* 
 .output{
     text-align: center;
     text-transform: uppercase;
@@ -54,4 +54,24 @@
 }
 .color-palette .item:hover{
 transform: scale(1.1);
+} */
+
+ul{
+    list-style: none;
+    padding: 20px;
+}
+li{
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.complateTask{
+    cursor: pointer;
+}
+.deleteTask{
+    cursor: pointer;
 }
