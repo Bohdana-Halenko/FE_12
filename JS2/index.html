@@ -5,13 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p class="output"></p>
 
+     <!-- <div class="output"></div> -->
+     <!-- <p class="cta">Scroll me!</p>
+     <div class="event-counter">
+        <div class="box">
+            <p class="text">Number of scroll events</p>
+            <span class="output">0</span>
+        </div>
+     </div> -->
 
+     <p class="cta">Scroll me!</p>
+     <div class="event-counter">
+        <div class="box">
+            <p class="text">No timing function!</p>
+            <span class="output vanilla">0</span>
+        </div>
 
-    <script async src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
-    <script src="./script.js"></script>
+        <div class="box">
+            <p>Throttle</p>
+            <span class="output throttle">0</span>
+        </div>
+
+        <div class="box">
+            <p>Debounce</p>
+            <span class="output debounce">0</span>
+        </div>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.min.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
