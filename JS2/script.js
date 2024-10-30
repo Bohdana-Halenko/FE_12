@@ -28,30 +28,42 @@
 //     output.textContent = scrollCounter;
 // })
 
-const vanillaOutput = document.querySelector(".output.vanilla");
-const throttleOutput = document.querySelector(".output.throttle");
-const debounceOutput = document.querySelector(".output.debounce");
-const eventCounter = {
-    vanilla: 0,
-    throttle: 0,
-    debounce: 0,
-};
+// const vanillaOutput = document.querySelector(".output.vanilla");
+// const throttleOutput = document.querySelector(".output.throttle");
+// const debounceOutput = document.querySelector(".output.debounce");
+// const eventCounter = {
+//     vanilla: 0,
+//     throttle: 0,
+//     debounce: 0,
+// };
 
-document.addEventListener("scroll", () => {
-    eventCounter.vanilla += 1;
-    vanillaOutput.textContent = eventCounter.vanilla;
-});
+// document.addEventListener("scroll", () => {
+//     eventCounter.vanilla += 1;
+//     vanillaOutput.textContent = eventCounter.vanilla;
+// });
 
-document.addEventListener("scroll",
-    _.throttle(() => {
-        eventCounter.throttle += 1;
-        throttleOutput.textContent = eventCounter.throttle;
-    }, 3000)
-);
+// document.addEventListener("scroll",
+//     _.throttle(() => {
+//         eventCounter.throttle += 1;
+//         throttleOutput.textContent = eventCounter.throttle;
+//     }, 3000)
+// );
 
-document.addEventListener("scroll",
-    _.debounce(() => {
-        eventCounter.debounce += 1;
-        debounceOutput.textContent = eventCounter.debounce;
-    }, 300)
-)
+// document.addEventListener("scroll",
+//     _.debounce(() => {
+//         eventCounter.debounce += 1;
+//         debounceOutput.textContent = eventCounter.debounce;
+//     }, 300)
+// )
+
+
+
+
+
+
+
+
+
+
+
+
