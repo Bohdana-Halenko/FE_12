@@ -28,22 +28,45 @@
 
 
 // Веб-сховище
-localStorage.setItem(key, value);
 
-const settings = {
-    theme: 'dark',
-    isAuthenfication: true,
-    options: [1, 2, 3]
-};
+// const settings = {
+//     theme: 'dark',
+//     isAuthenfication: true,
+//     options: [1, 2, 3]
+// };
 
-//збереження
-localStorage.setItem('settings', JSON.stringify(settings));
-//читання
-const savedSettings = localStorage.getItem('settings');
-const parsedSettings = JSON.parse(savedSettings);
-console.log(parsedSettings);
-//видалення
-localStorage.removeItem('theme');
+// //збереження
+// localStorage.setItem('settings', JSON.stringify(settings));
+// console.log(localStorage.getItem('settings'));
+// //читання
+// // const savedSettings = localStorage.getItem('settings');
+// // const parsedSettings = JSON.parse(savedSettings);
+// // console.log(parsedSettings);
+// //видалення
+// localStorage.removeItem('theme');
 
 
-localStorage.clear();
+// localStorage.clear();
+
+
+
+
+
+
+
+
+
+const textarea = document.getElementById('autosaveTextarea');
+
+const STORAGE_KEY = 'autosaveTextareaContent';
+
+const savedText = localStorage.getItem(STORAGE_KEY);
+if (savedText) {
+    textarea.value = savedText;
+}
+
+textarea.addEventListener('input', () => {
+    localStorage.setItem(STORAGE_KEY, textarea.value);
+})
+
+
