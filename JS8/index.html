@@ -5,9 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table{
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid gray;
+            padding: 8px;
+            text-align: left;
+        }
+        th{
+            background-color: rgb(228, 228, 228);
+        }
+        .form-container{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <textarea  id="autosaveTextarea" cols="50" rows="10" placeholder="Введіть текс..."></textarea>
+    <!-- <textarea  id="autosaveTextarea" cols="50" rows="10" placeholder="Введіть текс..."></textarea> -->
+    
+
+<h1>User Table</h1>
+    <div class="form-container">
+        <input type="text" id="firstName" placeholder="First name">
+        <input type="text" id="lastName" placeholder="Last name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="tel" id="phone" placeholder="Phone number">
+        <button id="addUser">Add/Update</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+    </table>
+
+
     
 
 
