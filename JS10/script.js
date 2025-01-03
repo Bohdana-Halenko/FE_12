@@ -27,17 +27,27 @@
 // }
 // button.addEventListener('click', onClick)
 
-const startBtn = document.querySelector(".js-start");
-const stopBtn = document.querySelector(".js-stop");
-let timer = null;
+// const startBtn = document.querySelector(".js-start");
+// const stopBtn = document.querySelector(".js-stop");
+// let timer = null;
 
-startBtn.addEventListener("click", () => {
-    timer = setInterval(() => {
-        console.log(`I love JS ${Math.random()}`);
-    }, 1000)
-});
+// startBtn.addEventListener("click", () => {
+//     timer = setInterval(() => {
+//         console.log(`I love JS ${Math.random()}`);
+//     }, 1000)
+// });
 
-stopBtn.addEventListener('click', () => {
-    clearInterval(timer);
-    console.log('Interval stopped!')
-})
+// stopBtn.addEventListener('click', () => {
+//     clearInterval(timer);
+//     console.log('Interval stopped!')
+// })
+
+
+
+const counterEl = document.getElementById('counter');
+let count = 0;
+
+setInterval(() => {
+    count++;
+    counterEl.textContent = count;
+}, 1000)
