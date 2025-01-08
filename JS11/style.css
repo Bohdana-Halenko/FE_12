@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(218, 235, 251);
+}
+.container{
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+h1{
+    margin-bottom: 20px;
+}
+#stopwatch-display{
+    font-size: 50px;
+    margin: 20px 0;
+}
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(73, 73, 222);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+button:hover{
+    background-color: rgb(64, 64, 220);
+}
+button.hidden{
+    display: none;
+}
