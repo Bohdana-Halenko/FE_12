@@ -1,0 +1,70 @@
+// const date = new Date();
+// console.log(date); //Wed Jan 15 2025 20:13:13 GMT+0200 (Восточная Европа, стандартное время)
+
+// let ms = Date.parse('2025-01-14T13:51:20.423');
+// alert(ms);
+
+// const date1 = new Date('January 16, 2025');
+// console.log(date1); //Thu Jan 16 2025 00:00:00 GMT+0200 (Восточная Европа, стандартное время)
+
+// const date2 = new Date(2020, 9, 10);
+// console.log(date2); //Sat Oct 10 2020 12:15:50 GMT+0300 (Восточная Европа, летнее время)
+
+// const date = new Date(10000000000);
+// console.log(date);//Thu Jan 01 1970 05:46:40 GMT+0300
+
+// const date = Date.now();
+// console.log(date); //1736966043842
+
+// const date = new Date();
+// console.log('Date: ' + date);
+
+// console.log("Date: " + date.getDate()); //Date: 15
+// console.log("Date: " + date.getDay()); //3
+// console.log("Date: " + date.getMonth()); //0
+// console.log("Date: " + date.getFullYear()); //2025
+// console.log("Date: " + date.getHours()); //20
+
+
+
+// const date = new Date();
+// console.log(`Час в мілісекундах від 1 січня 1970 року: ${date.getTime()}`);  //Час в мілісекундах від 1 січня 1970 року: 1736967046329
+
+// let result = 'Date: ';
+// result += date.getFullYear() + '-';
+// result += (date.getMonth() + 1)+ '-';
+// result += date.getDate() + '. ';
+
+// result += 'Time: ' + date.getHours() + ':';
+// result += date.getMinutes() + ':';
+// result += date.getSeconds() + '.';
+// result += date.getMilliseconds() + '.'
+
+// console.log(result); //Date: 2025/0/15. Time: 20:56:21.787.
+
+
+// const date = new Date(2025, 0, 15, 21, 0, 0, 0);
+// console.log(date.getTime()); //1736967600000
+
+// const secondsDate = new Date();
+// secondsDate.setFullYear(2026, 2, 14);
+// secondsDate.setHours(22, 10, 15, 0);
+
+
+
+// let date = new Date();
+
+// const options = {
+//     weekday: 'long',
+//     year: 'numeric',
+//     month: 'short',
+//     day: 'numeric',
+//     hour: '2-digit',
+//     minute: '2-digit',
+// }
+
+// const locateUk = date.toLocaleString('Uk-uk', options);
+// console.log(locateUk); //середу, 15 січ. 2025 р., 21:12
+
+// const locateUs = date.toLocaleString('en-US', options);
+// console.log(locateUs); //Wednesday, Jan 15, 2025, 09:14 PM
