@@ -68,3 +68,35 @@
 
 // const locateUs = date.toLocaleString('en-US', options);
 // console.log(locateUs); //Wednesday, Jan 15, 2025, 09:14 PM
+
+
+
+
+
+// const now = new Date();
+// console.log(now.toString()); //Fri Jan 17 2025 19:22:20 GMT+0200 (Восточная Европа, стандартное время)
+
+
+// const now = new Date();
+// console.log(now.toDateString()); //Fri Jan 17 2025
+// console.log(now.toTimeString()); //19:25:01 GMT+0200 (Восточная Европа, стандартное время)
+
+
+// let date = new Date();
+// console.log(+date); //1737134825422
+
+
+let start = Date.now();
+
+for (let i = 0; i < 100000; i++){
+    let doSmth = i * i * i;
+}
+
+let end = Date.now();
+alert(`${end - start}`)
+
+
+
+
+
+// Date.now() === new Date().getTime()
