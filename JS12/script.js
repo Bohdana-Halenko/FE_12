@@ -86,17 +86,29 @@
 // console.log(+date); //1737134825422
 
 
-let start = Date.now();
+// let start = Date.now();
 
-for (let i = 0; i < 100000; i++){
-    let doSmth = i * i * i;
-}
+// for (let i = 0; i < 100000; i++){
+//     let doSmth = i * i * i;
+// }
 
-let end = Date.now();
-alert(`${end - start}`)
+// let end = Date.now();
+// alert(`${end - start}`)
 
 
 
 
 
 // Date.now() === new Date().getTime()
+
+
+
+
+
+
+
+function getLastDayOfMonth(year, month) {
+    const nextMonth = new Date(year, month + 1, 0);
+    return nextMonth.getDate();
+}
+console.log(getLastDayOfMonth(2023, 0))

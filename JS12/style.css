@@ -1,0 +1,22 @@
+ .box {
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 1s ease-in-out;
+    }
+
+    .box.animate {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-image: url('https://via.placeholder.com/150');
+      background-size: cover;
+      background-position: center;
+    }
