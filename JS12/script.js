@@ -107,8 +107,61 @@
 
 
 
-function getLastDayOfMonth(year, month) {
-    const nextMonth = new Date(year, month + 1, 0);
-    return nextMonth.getDate();
+// function getLastDayOfMonth(year, month) {
+//     const nextMonth = new Date(year, month + 1, 0);
+//     return nextMonth.getDate();
+// }
+// console.log(getLastDayOfMonth(2023, 0))
+
+
+
+// function countBusinessDays(startDate, endDate) {
+//     const start = new Date(startDate);
+//     const end = new Date(endDate);
+ 
+//     if(start > end) {
+//         return 0;
+//     }
+ 
+//     let businessDaysCount = 0;
+     
+//     for (let currentDay = new Date(start); currentDay <= end; currentDay.setDate(currentDay.getDate() + 1)) {
+//         const dayOfWeek = currentDay.getDay();
+     
+//         if (dayOfWeek !== 0 && dayOfWeek !== 6) {
+//             businessDaysCount++;
+//         }
+//     }
+ 
+//     return businessDaysCount;
+//        }
+ 
+// const startDate = '2025-01-15';
+// const endDate = '2025-01-24'
+// console.log(countBusinessDays(startDate, endDate));
+
+
+
+// Форма реєстрації
+const savedUser = JSON.parse(localStorage.getItem('user'));
+const form = document.getElementById("registrationForm");
+const welcomeDiv = document.getElementById('welcome');
+
+if (savedUser) {
+    welcomeDiv.textContent = `Ласкаво просимо, ${savedUser.name}!`;
+    form.style.display = 'none';
 }
-console.log(getLastDayOfMonth(2023, 0))
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    const user = { name, email, password };
+    localStorage.setItem('user', JSON.stringify(user));
+
+     welcomeDiv.textContent = `Ласкаво просимо, ${name}!`;
+     form.style.display = "none";
+})
