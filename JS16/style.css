@@ -1,0 +1,20 @@
+#getCatFact{
+    padding: 10px 20px;
+    background-color: darkcyan;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+#btn{
+  padding: 10px 20px;
+    background-color: darkcyan;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
