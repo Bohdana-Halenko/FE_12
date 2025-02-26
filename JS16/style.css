@@ -1,20 +1,33 @@
-#getCatFact{
-    padding: 10px 20px;
-    background-color: darkcyan;
-    font-size: 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    color: white;
-    font-weight: 700;
+body{
+  text-align: center;
+  margin: 30px;
 }
-#btn{
-  padding: 10px 20px;
-    background-color: darkcyan;
-    font-size: 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    color: white;
-    font-weight: 700;
+.js-search-form{
+  margin-bottom: 30px;
+}
+input{
+  padding: 8px;
+  font-size: 16px;
+}
+button{
+  padding: 10px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: darkslategrey;
+  color: white;
+  border: none;
+}
+.card{
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  margin: 20px auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.card img{
+  width: 150px;
+}
+.error{
+  color: red;
 }
