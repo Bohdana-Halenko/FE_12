@@ -64,15 +64,29 @@
 // doUsers();
 
 
+// const fetchUsers = async () => {
+//     const url = "https://jsonplaceholder.typicode.com";
+//     const first = await fetch(`${url}/users/1`);
+//     const second = await fetch(`${url}/users/2`);
+//     const third = await fetch(`${url}/users/3`);
+
+//     const firstUser = await first.json();
+//     const secondUser = await second.json();
+//     const thirsUser = await third.json();
+//     console.log(firstUser, secondUser, thirsUser)
+// }
+// fetchUsers();
+
 const fetchUsers = async () => {
     const url = "https://jsonplaceholder.typicode.com";
-    const first = await fetch(`${url}/users/1`);
-    const second = await fetch(`${url}/users/2`);
-    const third = await fetch(`${url}/users/3`);
+    const userIds = [1, 2, 3];
 
-    const firstUser = await first.json();
-    const secondUser = await second.json();
-    const thirsUser = await third.json();
-    console.log(firstUser, secondUser, thirsUser)
+    const array = userIds.map(async userId => {
+        const r = await fetch(`${url}/users/${userId}`);
+        return r.json()
+    })
+
+    const users = await Promise.all(array);
+    console.log(users)
 }
 fetchUsers();
