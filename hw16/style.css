@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.wrap{
+    background-color: lightgoldenrodyellow;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+.country-name{
+    text-align: center;
+}
+.country-wrap{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.country-flag{
+    width: 200px;
+}
+.country-list{
+    list-style: none;
+}
+#country{
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
