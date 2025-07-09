@@ -63,28 +63,51 @@
 
 
 
-class User{
-    constructor({name, email}) {
-        this.name = name;
-        this.email = email;
-    }
+// class User{
+//     constructor({name, email}) {
+//         this.name = name;
+//         this.email = email;
+//     }
 
-    getEmail() {
-        return this.email;
-    }
+//     getEmail() {
+//         return this.email;
+//     }
 
-    changeEmail(newEmail) {
-        this.email = newEmail;
-    }
+//     changeEmail(newEmail) {
+//         this.email = newEmail;
+//     }
+// }
+
+// const matviy = new User({
+//   name: "Matviy",
+//   email: "matviy@gmail.com",
+// });
+// const anna = new User({
+//   name: "Anna",
+//   email: "anna@gmail.com",
+// });
+// console.log(matviy);
+// console.log(anna);
+
+
+// 09.07
+// Створіть клас Person, що містить властивості firstName та lastName. Додайте метод getFullName(),
+// який повертає повне ім'я у форматі "firstName lastName".
+// const person1 = new Person('John', 'Doe');
+// console.log(person1.getFullName()); // John Doe
+
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`
+  }
 }
+const person1 = new Person("John", "Doe");
+console.log(person1.getFullName());
 
-const matviy = new User({
-  name: "Matviy",
-  email: "matviy@gmail.com",
-});
-const anna = new User({
-  name: "Anna",
-  email: "anna@gmail.com",
-});
-console.log(matviy);
-console.log(anna);
+const person2 = new Person('Matviy', 'Holovatyi');
+console.log(person2.getFullName());
